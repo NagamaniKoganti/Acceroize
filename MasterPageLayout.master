@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageLayout.master.cs" Inherits="MasterPageLayout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="styles/StyleSheet.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+    <div id="header">
+      <div id="logo">
+          <div style="width:186px;float:left;height:36px;align-items:center;padding:6px; " >
+            <ul class="side-menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="Default.aspx">Sign In</a></li>
+          <li><a href="examples.html">Register</a></li>
+           </ul>
+          </div>
+          <div id="logo_text">
+            
+<!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="Default.aspx">Accessories <span class="logo_colour"></span></a></h1>
+          <h2>One stop for all your needs...</h2>
+            
+          
+        </div>
+          <div style="float:right;">
+              <asp:TextBox ID="TextBox1" runat="server" class="search" Text="Enter keywords....." ></asp:TextBox>
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="styles/search.png" alt="Search" title="Search" />
+               </div>
+          <div id="menubar">
+        <ul class="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="Default.aspx">Home</a></li>
+          <li><a href="examples.html">Latest</a></li>
+          <li><a href="page.html">Sale</a></li>
+          <li><a href="Contact.aspx">Contact Us</a></li>
+        </ul>
+      </div>
+         
+      </div>
+      
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+     </asp:ContentPlaceHolder>
+        </div>
+           
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="examples.html">Examples</a> | <a href="page.html">A Page</a> | <a href="another_page.html">Another Page</a> | <a href="contact.html">Contact Us</a></p>
+      <p>Copyright &copy; simplestyle_banner | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">HTML5 Web Templates</a></p>
+    </div>
+  </div>
+   </form>
+</body>
+</html>

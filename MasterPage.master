@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPageLayout.master" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage2" %>
+
+<asp:Content ID="ContentMaster" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <div id="site_content">
+     <div id="banner_container">
+          <div id="banner">
+              <asp:ContentPlaceHolder ID="ContentPlaceHolderSlideshow" runat="server">
+
+              </asp:ContentPlaceHolder>
+          </div>
+          <div id="Banner-left">
+                <div class="sidebar_base"></div>
+                 <div><h4 style="padding:15px">Accessories</h4></div>
+                <div class="sidebar">
+                 <div class="sidebar_top"></div>
+                <div class="sidebar_item">
+                    <asp:DropDownList ID="DdlItems" runat="server" AutoPostBack="True" Height="30px" Width="190px">
+                        <asp:ListItem Value="0">All Items</asp:ListItem>
+                        <asp:ListItem Value="1">Clothing</asp:ListItem>
+                        <asp:ListItem Value="3">Foot ware</asp:ListItem>
+                        <asp:ListItem Value="3">Jewellery</asp:ListItem>
+                        <asp:ListItem Value="5">Bags &amp; Purse</asp:ListItem>
+                        <asp:ListItem Value="6">Hair</asp:ListItem>
+                        <asp:ListItem Value="7">Beauty Care</asp:ListItem>
+                        <asp:ListItem Value="8">Fancy</asp:ListItem>
+                        <asp:ListItem Value="8">Other</asp:ListItem>
+                    </asp:DropDownList></div>
+                    <div class="sidebar_base"></div>
+                    </div>
+               
+          </div>
+            </div>
+     <div id="sidebar_container">
+                <div>
+                  <ul class="side-menu">
+                    <li><a href="#home">Today</a></li>
+                    <li><a href="#news">week</a></li>
+                    <li><a href="#contact">Customer rated</a></li>
+                    </ul>
+                    </div>
+                        <div>
+            
+        </div>
+        </div>
+     <div id="content">
+       <asp:ContentPlaceHolder id="ContentPlaceHolderContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+      </div>
+      </div>
+           
+  </asp:Content>
+
