@@ -29,7 +29,7 @@ public partial class Contact : System.Web.UI.Page
                 smtpClient.Host = "smtp.gmail.com";
                 smtpClient.Port = 587;
                 smtpClient.EnableSsl = true;
-                smtpClient.Credentials = new System.Net.NetworkCredential("nagamani.ramineni@gmail.com", "********"
+                smtpClient.Credentials = new System.Net.NetworkCredential("nagamani.ramineni@gmail.com", "harshu_jashu5");
                 smtpClient.Send(mailMessage);
 
                 LabelMessage.ForeColor = System.Drawing.Color.Blue;
